@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>read excel</title>
+  </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css"  />
+  <script src="js/xlsx.full.min.js"></script>
+  <script src="js/myfile.js"></script>
+
+  <body>
+    <br />
+    <br />
+    <center>
+      <div class="container">
+        <div class="jumbotron">
+          <button class="btn btn-danger" onclick="addlevel(); start();">add a new level</button>
+          <br />
+          <br />
+          <!-- <input type="file"  id="xlf" /> -->
+          <div id="levels"></div>
+          <button onclick="Submit()" class="btn btn-primary" id="button" disabled>Submit</button>
+        </div>
+      </div>
+    <div id="yeah"></div>
+  </center>
+
+  <!-- This Code is For Sign In Authentication on FireBase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  
+   <!-- include the individual components we may need
+           firebase-app - The core firebase client 
+           firebase-auth - Firebase Authentication 
+           firebase-database - The Firebase Realtime Database   -->
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+
+<script>
+   // Initialize Firebase
+   var config = {
+       apiKey: "AIzaSyAVBvTdNRpyjqLvxsSSHhwkLhWG7N7_dpw",
+       authDomain: "testwebsite-46e41.firebaseapp.com",
+       databaseURL: "https://testwebsite-46e41.firebaseio.com",
+       projectId: "testwebsite-46e41",
+       storageBucket: "testwebsite-46e41.appspot.com",
+       messagingSenderId: "135062523743"
+       };
+   firebase.initializeApp(config);
+</script>
+
+  </body>
+</html>
