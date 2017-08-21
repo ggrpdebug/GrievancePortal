@@ -89,7 +89,7 @@ function uploadJson(){
 
 
 function Submit(){
-  var elements = document.getElementsByTagName('td');
+  /*var elements = document.getElementsByTagName('td');
   // Loop through each tag and place a card in HTML
   for(var i = 0; i < elements.length; i++){
     // Generate a random number 
@@ -110,8 +110,8 @@ function Submit(){
 
 
 
-
-  //window.open ('Second_Page.html','_self',false);
+*/
+  window.open ('Second_Page.html','_self',false);
 
   /*var userDataRef = firebase.database().ref("Level 0").orderByKey();
   userDataRef.once("value")
